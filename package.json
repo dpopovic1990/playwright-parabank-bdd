@@ -1,0 +1,29 @@
+{
+  "name": "playwright-parabank-bdd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "build": "tsc",
+    "bdd": "npm run build && cucumber-js src/bdd/features/**/*.feature --require dist/bdd/**/*.js --tags \"not @wip\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dpopovic1990/playwright-parabank-bdd.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/dpopovic1990/playwright-parabank-bdd/issues"
+  },
+  "homepage": "https://github.com/dpopovic1990/playwright-parabank-bdd#readme",
+  "devDependencies": {
+    "@cucumber/cucumber": "^12.2.0",
+    "@cucumber/html-formatter": "^22.1.0",
+    "@playwright/test": "^1.56.1",
+    "ts-node": "^10.9.2"
+  }
+}

@@ -17,7 +17,7 @@ Demo application under test:
 
 
 # 📂 Project Structure
-
+```bash
 playwright-parabank-bdd/
 │
 ├── src/
@@ -36,7 +36,7 @@ playwright-parabank-bdd/
 ├── tsconfig.json
 ├── .github/workflows/tests.yml   # GitHub Actions CI pipeline
 └── README.md
-
+```
 
 # 🧱 Framework Architecture
                    ┌──────────────────────────┐
@@ -63,31 +63,49 @@ playwright-parabank-bdd/
 
 # 🚀 Getting Started
 ## 📦 Install dependencies
+```bash
 npm install
+```
 
 # ▶️ Running UI Tests
+```bash
 npm run test
+```
 
 UI test files are located under:
+```bash
 src/tests/ui/*.spec.ts
+```
 
 View the latest HTML report:
+```bash
 npx playwright show-report
+```
 
 # 🌐 Running API Tests
+```bash
 npx playwright test --project=api
+```
 
 API tests live in:
+```bash
 src/api/tests/*.spec.ts
+```
 
 # 🥒 Running BDD Tests (Cucumber.js)
+```bash
 npm run bdd
+```
 
 Feature files:
+```bash
 src/bdd/features/*.feature
+```
 
 Step definitions:
+```bash
 src/bdd/steps/*.ts
+```
 
 # 📘 Implemented Scenarios
 ✓ UI Test Coverage
@@ -107,16 +125,18 @@ src/bdd/steps/*.ts
  - Transferring funds
 
 # 🤖 Continuous Integration (GitHub Actions)
+```bash
 .github/workflows/tests.yml
+```
 
 CI pipeline performs:
-✔ Install Node.js & dependencies
-✔ Install Playwright browsers
-✔ Run UI tests
-✔ Run API tests
-✔ Run BDD tests
-✔ Validate TypeScript build
-✔ Generate test reports
+- ✔ Install Node.js & dependencies
+- ✔ Install Playwright browsers
+- ✔ Run UI tests
+- ✔ Run API tests
+- ✔ Run BDD tests
+- ✔ Validate TypeScript build
+- ✔ Generate test reports
 
 Pull requests automatically trigger full regression checks.
 
@@ -159,10 +179,11 @@ This project demonstrates:
 It serves as a portfolio-grade demonstration of senior-level automation engineering skills.
 
 # 👨‍💻 Author
-Danijel Popović
-Principal QA Engineer / Test Automation Architect
-10+ years in Automation, QA Leadership, Test Strategy & Framework Design
-Focused on TypeScript, Playwright, Selenium, and QA Engineering practices.
+**Danijel Popović**  
+- Principal QA Engineer / Test Automation Architect  
+- 10+ years in Automation & QA Leadership  
+- Specialized in Test Strategy, Framework Architecture, and CI/CD  
+- Focus on TypeScript, Playwright, Selenium, and modern QA engineering practices
 
 # ⭐ Support
 If you find this repository useful, feel free to star ⭐ it on GitHub or reach out for collaboration.

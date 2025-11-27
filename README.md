@@ -1,4 +1,3 @@
-📘 README.md — Playwright + TypeScript End-to-End Automation Framework
 # 🧪 Playwright + TypeScript Automation Framework  
 ### ParaBank Demo Application (UI • API • BDD • CI)
 
@@ -16,11 +15,9 @@ The framework includes:
 Demo application under test:  
 ➡ **https://parabank.parasoft.com/parabank**
 
----
 
 # 📂 Project Structure
 
-```bash
 playwright-parabank-bdd/
 │
 ├── src/
@@ -40,7 +37,8 @@ playwright-parabank-bdd/
 ├── .github/workflows/tests.yml   # GitHub Actions CI pipeline
 └── README.md
 
-🧱 Framework Architecture
+
+# 🧱 Framework Architecture
                    ┌──────────────────────────┐
                    │      Feature Files        │  ← BDD (Gherkin)
                    └──────────────┬───────────┘
@@ -63,11 +61,11 @@ playwright-parabank-bdd/
                  │     GitHub Actions CI Pipeline       │
                  └─────────────────────────────────────┘
 
-🚀 Getting Started
-📦 Install dependencies
+# 🚀 Getting Started
+## 📦 Install dependencies
 npm install
 
-▶️ Running UI Tests
+# ▶️ Running UI Tests
 npm run test
 
 UI test files are located under:
@@ -76,13 +74,13 @@ src/tests/ui/*.spec.ts
 View the latest HTML report:
 npx playwright show-report
 
-🌐 Running API Tests
+# 🌐 Running API Tests
 npx playwright test --project=api
 
 API tests live in:
 src/api/tests/*.spec.ts
 
-🥒 Running BDD Tests (Cucumber.js)
+# 🥒 Running BDD Tests (Cucumber.js)
 npm run bdd
 
 Feature files:
@@ -91,7 +89,7 @@ src/bdd/features/*.feature
 Step definitions:
 src/bdd/steps/*.ts
 
-📘 Implemented Scenarios
+# 📘 Implemented Scenarios
 ✓ UI Test Coverage
  - Login (valid and invalid)
  - Accounts overview (list accounts)
@@ -108,7 +106,7 @@ src/bdd/steps/*.ts
  - Opening Account Details
  - Transferring funds
 
-🤖 Continuous Integration (GitHub Actions)
+# 🤖 Continuous Integration (GitHub Actions)
 .github/workflows/tests.yml
 
 CI pipeline performs:
@@ -122,7 +120,7 @@ CI pipeline performs:
 
 Pull requests automatically trigger full regression checks.
 
-🧰 Tech Stack
+# 🧰 Tech Stack
 | Technology                        | Purpose                          |
 | --------------------------------- | -------------------------------- |
 | **Playwright**                    | UI + API test automation         |
@@ -141,7 +139,7 @@ Pull requests automatically trigger full regression checks.
 All reports are stored under:
 html-report/
 
-🧪 Useful Commands
+# 🧪 Useful Commands
 | Command                             | Description           |
 | ----------------------------------- | --------------------- |
 | `npm run test`                      | Run UI tests          |
@@ -149,7 +147,7 @@ html-report/
 | `npx playwright test --project=api` | Run API tests         |
 | `npx playwright show-report`        | Open HTML report      |
 
-💡 Why This Framework?
+# 💡 Why This Framework?
 This project demonstrates:
  - A scalable and maintainable automation architecture
  - Integration of UI + API + BDD in a single solution
@@ -160,11 +158,11 @@ This project demonstrates:
 
 It serves as a portfolio-grade demonstration of senior-level automation engineering skills.
 
-👨‍💻 Author
+# 👨‍💻 Author
 Danijel Popović
 Principal QA Engineer / Test Automation Architect
 10+ years in Automation, QA Leadership, Test Strategy & Framework Design
 Focused on TypeScript, Playwright, Selenium, and QA Engineering practices.
 
-⭐ Support
+# ⭐ Support
 If you find this repository useful, feel free to star ⭐ it on GitHub or reach out for collaboration.

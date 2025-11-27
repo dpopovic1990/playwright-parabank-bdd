@@ -3,14 +3,36 @@
 
 This repository showcases a **complete end-to-end test automation framework** built with **Playwright + TypeScript**, following modern engineering standards and clean architecture principles.
 
-The framework includes:
+<p align="left">
+  <img src="https://img.shields.io/github/actions/workflow/status/dpopovic1990/playwright-parabank-bdd/tests.yml?label=CI%20Build&style=for-the-badge" />
+  <img src="https://img.shields.io/badge/TypeScript-5.x-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
+  <img src="https://img.shields.io/badge/Playwright-Testing-45ba4b?style=for-the-badge&logo=playwright&logoColor=white" />
+  <img src="https://img.shields.io/badge/Cucumber-BDD-23d96c?style=for-the-badge&logo=cucumber&logoColor=white" />
+  <img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge" />
+</p>
 
-- 🔹 UI Automation (Playwright Test + Page Object Model)
-- 🔹 API Testing (Playwright APIRequestContext)
-- 🔹 BDD (Cucumber.js + Gherkin)
-- 🔹 GitHub Actions CI Pipeline
-- 🔹 Reporting (HTML, Video, Screenshot on failure)
-- 🔹 Multi-project configuration (UI + API)
+This repository demonstrates:
+
+- UI functional testing with **Playwright**
+- API testing with **Playwright APIRequestContext**
+- BDD scenarios using **Cucumber.js**
+- TypeScript strong typing and POM structure
+- GitHub Actions CI with full regression pipeline
+- Clean automation architecture suitable for enterprise-level QA engineering
+
+It serves as a portfolio-grade example of senior-level test automation design.
+
+## 🎯 Background & Motivation
+
+This project showcases my approach to designing maintainable, scalable, and production-ready automation frameworks.  
+It demonstrates real-world QA engineering principles, such as:
+
+- Clean separation of concerns  
+- Domain-driven automation design  
+- Strongly typed test code (TypeScript)  
+- Extensibility for UI, API, and BDD  
+- Reuse of Playwright fixtures  
+- CI-ready test execution  
 
 Demo application under test:  
 ➡ **https://parabank.parasoft.com/parabank**
@@ -167,16 +189,32 @@ html-report/
 | `npx playwright test --project=api` | Run API tests         |
 | `npx playwright show-report`        | Open HTML report      |
 
-# 💡 Why This Framework?
-This project demonstrates:
- - A scalable and maintainable automation architecture
- - Integration of UI + API + BDD in a single solution
- - Deep understanding of Playwright best practices
- - Practical usage of POM with TypeScript
- - Strong CI integration using GitHub Actions
- - Production-level code organization suitable for large QA teams
+# 🧱 How to Expand This Framework
+### 1. Add centralized test data management
+ - /data directory
+ - Environment-based configuration
+ - Dynamic data builders
 
-It serves as a portfolio-grade demonstration of senior-level automation engineering skills.
+### 2. Add hybrid API → UI integration tests
+ - Example:
+API creates a bank account → UI validates existence.
+
+### 3. Add custom Playwright fixtures
+ - Authenticated context
+ - Reusable domain actions
+ - Custom reporters
+
+### 4. Add test suite grouping
+ - smoke
+ - regression
+ - nightly
+
+### 5. Add Allure reporting
+ - Combined UI + API + BDD reports.
+
+### 6. Add Docker support
+ - Portable automated test environment for any CI platform.
+
 
 # 👨‍💻 Author
 **Danijel Popović**  

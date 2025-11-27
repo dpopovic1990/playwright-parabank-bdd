@@ -6,7 +6,8 @@
   "scripts": {
     "test": "npx playwright test",
     "build": "tsc",
-    "bdd": "npm run build && cucumber-js src/bdd/features/**/*.feature --require dist/bdd/**/*.js --tags \"not @wip\""
+    "bdd": "npm run build && cucumber-js src/bdd/features/**/*.feature --require dist/bdd/world.js --require dist/bdd/hooks.js --require dist/bdd/steps/**/*.js --tags \"not @wip\"",
+    "bdd:all": "npm run build && cucumber-js src/bdd/features/**/*.feature --require dist/bdd/world.js --require dist/bdd/hooks.js --require dist/bdd/steps/**/*.js"
   },
   "repository": {
     "type": "git",
